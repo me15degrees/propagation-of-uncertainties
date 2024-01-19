@@ -13,6 +13,8 @@ y1 = 3.0
 incerteza_soma = propaga_incertezas_soma(x1, y1, Δx1, Δy1)
 println("Incerteza na Soma: ", round(incerteza_soma, digits=2))
 
+
+
 # f(x,y) = x * y
 function propaga_incertezas_multiplicacao(x, y, Δx, Δy)
     Δf = sqrt((y * Δx)^2 + (x * Δy)^2)
